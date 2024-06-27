@@ -2,10 +2,23 @@
 <html>
 <head>
     <meta charset="UTF-8">
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">-->
     <title>{% block title %}{% endblock %}</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+
 </head>
 <body>
-    {% block body %}
-    {% endblock %}
+{% block body %}
+{% endblock %}
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+{% block footer %}
+{% endblock %}
+
 </body>
 </html>
