@@ -15,6 +15,11 @@
     <label for="inputPassword">Password</label>
     <input type="password" id="inputPassword" name="password" placeholder="password">
   </div>
+  <div>
+    <label>
+      <input type="checkbox" name="remember_me" {% if remember_me %} checked="checked" {% endif %} /> Remember me
+    </label>
+  </div>
 
   <button type="submit">Log in</button>
 </form>
@@ -22,5 +27,7 @@
 <br>
 
 <a href="/signup/new">sign up</a>
+<br>
+<a href="/password/forgot">forgot password</a>
 
 {% endblock %}

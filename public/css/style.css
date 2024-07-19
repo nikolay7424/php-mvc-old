@@ -1,0 +1,20 @@
+.alert {
+    border: 2px solid #333;
+    padding: 6px;
+    color: black;
+    font-weight: bold;
+}
+
+.alert-info {
+    background: deepskyblue;
+}
+.alert-success {
+    background: mediumseagreen;
+}
+.alert-warning {
+    background: palevioletred;
+}
+
+.error {
+    color: red;
+}

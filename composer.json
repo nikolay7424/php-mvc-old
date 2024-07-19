@@ -2,12 +2,21 @@
     "require": {
         "twig/twig": "~3.0",
       "ext-pdo": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "mailgun/mailgun-php": "^4.2",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/message": "^1.16",
+        "http-interop/http-factory-guzzle": "^1.2"
     },
     "autoload": {
         "psr-4": {
             "Core\\": "Core/",
             "App\\": "App/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
         }
     }
 }

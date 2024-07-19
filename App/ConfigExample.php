@@ -7,7 +7,7 @@ namespace App;
  *
  * PHP version 7.0
  */
-class Config
+class ConfigExapmle
 {
 
     /**
@@ -39,4 +39,13 @@ class Config
      * @var boolean
      */
     const SHOW_ERRORS = true;
+
+
+    //use your mailgun api keys
+    const SECRET_KEY = '';
+
+    const MAILGUN_API_KEY = '';
+
+    const MAILGUN_DOMAIN = '';
 }
+
