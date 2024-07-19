@@ -49,12 +49,12 @@
 
 <form method="post" id="formPassword" action="/password/reset-password">
     <input type="hidden" name="token" value="{{ token }}">
-    <div>
-        <label for="inputPassword">Password</label>
+    <div class="form-group">
+        <label class="form-control" for="inputPassword">Password</label>
         <input type="password" id="inputPassword" name="password" placeholder="password">
     </div>
 
-    <button type="submit">Reset Password</button>
+    <button class="btn btn-warning" type="submit">Reset Password</button>
 </form>
 
 {% endblock %}

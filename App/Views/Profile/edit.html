@@ -66,21 +66,21 @@
 {% endif %}
 
 <form method="post"  id="formProfile" action="/profile/update">
-    <div>
+    <div class="form-group">
         <label for="inputName">Name</label>
-        <input type="text" id="inputName" name="name" value="{{ user.name }}" placeholder="name" >
+        <input class="form-control" type="text" id="inputName" name="name" value="{{ user.name }}" placeholder="name" >
     </div>
-    <div>
+    <div class="form-group">
         <label for="inputEmail">Email</label>
-        <input type="email" id="inputEmail" name="email" value="{{ user.email }}" placeholder="email">
+        <input class="form-control" type="email" id="inputEmail" name="email" value="{{ user.email }}" placeholder="email">
     </div>
-    <div>
+    <div class="form-group">
         <label for="inputPassword">Password</label>
-        <input type="password" id="inputPassword" name="password" placeholder="password" aria-describedby="helpBlock">
-        <span id="helpBlock">leave black if you want to keep current password</span>
+        <input class="form-control" type="password" id="inputPassword" name="password" placeholder="password" aria-describedby="helpBlock">
+        <p id="helpBlock"><small>Leave blanc if you want to <mark>keep</mark> current password</small></p>
     </div>
 
-    <button type="submit">Save</button>
+    <button class="btn btn-primary" type="submit">Save</button>
     <a href="/profile/show">Cancel</a>
 </form>
 

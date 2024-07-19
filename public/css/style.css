@@ -1,20 +1,10 @@
-.alert {
-    border: 2px solid #333;
-    padding: 6px;
-    color: black;
-    font-weight: bold;
+body {
+    margin-top: 3em !important;
 }
 
-.alert-info {
-    background: deepskyblue;
-}
-.alert-success {
-    background: mediumseagreen;
-}
-.alert-warning {
-    background: palevioletred;
-}
-
-.error {
-    color: red;
+.hideShowPassword-toggle {
+    border-radius: 5px;
+    background: transparent;
+    border: 1px black solid;
+    padding: 5px 10px;
 }
